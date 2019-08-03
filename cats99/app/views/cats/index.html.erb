@@ -1,0 +1,16 @@
+<h1>All the cats!</h1>
+
+<table>
+  <tr>
+    <th>Birth Date</th>
+    <th>Color</th>
+    <th>Name</th>
+    <th>Sex</th>
+    <th>Description</th>
+    <th>Edit</th>
+  </tr>
+  <% @cats.each do |cat| %>
+    <%= render 'cat', cat: cat %>
+  <% end %>
+
+</table>
